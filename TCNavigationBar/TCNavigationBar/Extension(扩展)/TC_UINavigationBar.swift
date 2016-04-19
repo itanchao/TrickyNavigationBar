@@ -16,7 +16,8 @@ extension UINavigationBar{
             setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
             let view = UIView(frame: CGRect(x: 0, y: -20, width: UIScreen.mainScreen().bounds.size.width, height: CGRectGetHeight(self.bounds)+20))
             view.userInteractionEnabled = false
-            view.autoresizingMask =  UIViewAutoresizing.FlexibleHeight.union(UIViewAutoresizing.FlexibleWidth)
+            view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth,UIViewAutoresizing.FlexibleHeight]
+//            view.autoresizingMask =  UIViewAutoresizing.FlexibleHeight.union(UIViewAutoresizing.FlexibleWidth)
             setOverlay(view)
             insertSubview(view, atIndex: 0)
         }
