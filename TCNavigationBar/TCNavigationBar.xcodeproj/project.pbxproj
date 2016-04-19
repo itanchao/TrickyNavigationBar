@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2185C1E81CC5D30D00D51F17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185C1E71CC5D30D00D51F17 /* AppDelegate.swift */; };
-		2185C1EA1CC5D30D00D51F17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185C1E91CC5D30D00D51F17 /* ViewController.swift */; };
+		2185C1EA1CC5D30D00D51F17 /* BGColorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185C1E91CC5D30D00D51F17 /* BGColorDemoViewController.swift */; };
 		2185C1ED1CC5D30D00D51F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2185C1EB1CC5D30D00D51F17 /* Main.storyboard */; };
 		2185C1EF1CC5D30D00D51F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2185C1EE1CC5D30D00D51F17 /* Assets.xcassets */; };
 		2185C1F21CC5D30D00D51F17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2185C1F01CC5D30D00D51F17 /* LaunchScreen.storyboard */; };
 		2185C1FB1CC5D35D00D51F17 /* TC_UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185C1FA1CC5D35D00D51F17 /* TC_UINavigationBar.swift */; };
+		2185C1FE1CC5D70600D51F17 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2185C1FD1CC5D70600D51F17 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2185C1E41CC5D30D00D51F17 /* TCNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2185C1E71CC5D30D00D51F17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2185C1E91CC5D30D00D51F17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2185C1E91CC5D30D00D51F17 /* BGColorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGColorDemoViewController.swift; sourceTree = "<group>"; };
 		2185C1EC1CC5D30D00D51F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2185C1EE1CC5D30D00D51F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2185C1F11CC5D30D00D51F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2185C1F31CC5D30D00D51F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2185C1FA1CC5D35D00D51F17 /* TC_UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TC_UINavigationBar.swift; sourceTree = "<group>"; };
+		2185C1FD1CC5D70600D51F17 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		2185C1E61CC5D30D00D51F17 /* TCNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				2185C1FC1CC5D6F700D51F17 /* Images */,
 				2185C1F91CC5D35000D51F17 /* Extension(扩展) */,
 				2185C1E71CC5D30D00D51F17 /* AppDelegate.swift */,
-				2185C1E91CC5D30D00D51F17 /* ViewController.swift */,
+				2185C1E91CC5D30D00D51F17 /* BGColorDemoViewController.swift */,
 				2185C1EB1CC5D30D00D51F17 /* Main.storyboard */,
 				2185C1EE1CC5D30D00D51F17 /* Assets.xcassets */,
 				2185C1F01CC5D30D00D51F17 /* LaunchScreen.storyboard */,
@@ -73,6 +76,14 @@
 				2185C1FA1CC5D35D00D51F17 /* TC_UINavigationBar.swift */,
 			);
 			path = "Extension(扩展)";
+			sourceTree = "<group>";
+		};
+		2185C1FC1CC5D6F700D51F17 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2185C1FD1CC5D70600D51F17 /* bg.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			files = (
 				2185C1F21CC5D30D00D51F17 /* LaunchScreen.storyboard in Resources */,
 				2185C1EF1CC5D30D00D51F17 /* Assets.xcassets in Resources */,
+				2185C1FE1CC5D70600D51F17 /* bg.jpg in Resources */,
 				2185C1ED1CC5D30D00D51F17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2185C1FB1CC5D35D00D51F17 /* TC_UINavigationBar.swift in Sources */,
-				2185C1EA1CC5D30D00D51F17 /* ViewController.swift in Sources */,
+				2185C1EA1CC5D30D00D51F17 /* BGColorDemoViewController.swift in Sources */,
 				2185C1E81CC5D30D00D51F17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chaoren.TCNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,6 +291,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chaoren.TCNavigationBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
