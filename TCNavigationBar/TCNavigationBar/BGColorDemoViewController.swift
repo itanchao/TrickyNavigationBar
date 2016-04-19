@@ -8,15 +8,25 @@
 
 import UIKit
 typealias BGColorDemoViewDelegate = protocol<UITableViewDataSource,UITableViewDelegate>
-private let NAVBAR_CHANGE_POINT : CGFloat = 50
+let NAVBAR_CHANGE_POINT : CGFloat = 50
 
 class BGColorDemoViewController: UIViewController,BGColorDemoViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar .tc_setBackgroundColor(UIColor.clearColor())
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        scrollViewDidScroll(tableView)
         navigationController?.navigationBar.shadowImage = UIImage()
+        tableView.delegate = self
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        tableView.delegate = nil
+        navigationController?.navigationBar.tc_reset()
     }
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let color = UIColor(red: 0/255.0, green: 175/255.0, blue: 240/255.0, alpha: 1)

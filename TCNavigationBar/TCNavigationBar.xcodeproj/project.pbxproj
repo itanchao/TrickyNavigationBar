@@ -14,6 +14,7 @@
 		2185C1F21CC5D30D00D51F17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2185C1F01CC5D30D00D51F17 /* LaunchScreen.storyboard */; };
 		2185C1FB1CC5D35D00D51F17 /* TC_UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185C1FA1CC5D35D00D51F17 /* TC_UINavigationBar.swift */; };
 		2185C1FE1CC5D70600D51F17 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2185C1FD1CC5D70600D51F17 /* bg.jpg */; };
+		2185C2001CC5F1F900D51F17 /* ScrollingNavbarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185C1FF1CC5F1F900D51F17 /* ScrollingNavbarDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2185C1F31CC5D30D00D51F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2185C1FA1CC5D35D00D51F17 /* TC_UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TC_UINavigationBar.swift; sourceTree = "<group>"; };
 		2185C1FD1CC5D70600D51F17 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		2185C1FF1CC5F1F900D51F17 /* ScrollingNavbarDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingNavbarDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2185C1F91CC5D35000D51F17 /* Extension(扩展) */,
 				2185C1E71CC5D30D00D51F17 /* AppDelegate.swift */,
 				2185C1E91CC5D30D00D51F17 /* BGColorDemoViewController.swift */,
+				2185C1FF1CC5F1F900D51F17 /* ScrollingNavbarDemoViewController.swift */,
 				2185C1EB1CC5D30D00D51F17 /* Main.storyboard */,
 				2185C1EE1CC5D30D00D51F17 /* Assets.xcassets */,
 				2185C1F01CC5D30D00D51F17 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2185C1FB1CC5D35D00D51F17 /* TC_UINavigationBar.swift in Sources */,
+				2185C2001CC5F1F900D51F17 /* ScrollingNavbarDemoViewController.swift in Sources */,
 				2185C1EA1CC5D30D00D51F17 /* BGColorDemoViewController.swift in Sources */,
 				2185C1E81CC5D30D00D51F17 /* AppDelegate.swift in Sources */,
 			);
