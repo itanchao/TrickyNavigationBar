@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TrickyNavigationBar'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'UINavigationBar Extension which allows you to change its appearance dynamically'
   s.homepage         = 'https://github.com/itanchao/TrickyNavigationBar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -9,3 +9,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'TrickyNavigationBar/Classes/**/*'
 end
+
