@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1EFEFE52E270F8382434592D /* Pods_TrickyNavigationBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35568A4EBD1EFA084C0A5AF /* Pods_TrickyNavigationBar_Example.framework */; };
-		410A8C45FC8A26B0B94F5664 /* Pods_TrickyNavigationBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB4CA89D438959812E311CA /* Pods_TrickyNavigationBar_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -45,13 +44,11 @@
 		6DBDACE6D40F200591A627EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		736B7C2A32310C07734FADA6 /* Pods-TrickyNavigationBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrickyNavigationBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrickyNavigationBar_Example/Pods-TrickyNavigationBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8272A24865CCEEDAAC33CF20 /* Pods-TrickyNavigationBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrickyNavigationBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrickyNavigationBar_Example/Pods-TrickyNavigationBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9F272CD211C59806D6907F47 /* Pods-TrickyNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrickyNavigationBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrickyNavigationBar_Tests/Pods-TrickyNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F821CB1DA4D0BE79E11A05F /* TrickyNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TrickyNavigationBar.podspec; path = ../TrickyNavigationBar.podspec; sourceTree = "<group>"; };
 		D59442791EC441A40047CBCD /* BGColorDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGColorDemoViewController.swift; sourceTree = "<group>"; };
 		D594427A1EC441A40047CBCD /* ScrollingNavbarDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingNavbarDemoViewController.swift; sourceTree = "<group>"; };
 		D59442821EC44D080047CBCD /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		E35568A4EBD1EFA084C0A5AF /* Pods_TrickyNavigationBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrickyNavigationBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF3A7F4009694D202684ABCD /* Pods-TrickyNavigationBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrickyNavigationBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrickyNavigationBar_Tests/Pods-TrickyNavigationBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410A8C45FC8A26B0B94F5664 /* Pods_TrickyNavigationBar_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +157,6 @@
 			children = (
 				8272A24865CCEEDAAC33CF20 /* Pods-TrickyNavigationBar_Example.debug.xcconfig */,
 				736B7C2A32310C07734FADA6 /* Pods-TrickyNavigationBar_Example.release.xcconfig */,
-				9F272CD211C59806D6907F47 /* Pods-TrickyNavigationBar_Tests.debug.xcconfig */,
-				EF3A7F4009694D202684ABCD /* Pods-TrickyNavigationBar_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -194,12 +188,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TrickyNavigationBar_Tests" */;
 			buildPhases = (
-				8E33F338361D825DED26505D /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				63ED63E8158BF6D5A9914BD5 /* [CP] Embed Pods Frameworks */,
-				1AED0B01DEABA4108CC691E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,21 +279,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1AED0B01DEABA4108CC691E6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrickyNavigationBar_Tests/Pods-TrickyNavigationBar_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2F94644F437BF50652C8EEFC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,21 +294,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrickyNavigationBar_Example/Pods-TrickyNavigationBar_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		63ED63E8158BF6D5A9914BD5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrickyNavigationBar_Tests/Pods-TrickyNavigationBar_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		87888D122B45708596F5ED45 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,21 +307,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrickyNavigationBar_Example/Pods-TrickyNavigationBar_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E33F338361D825DED26505D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -533,7 +479,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F272CD211C59806D6907F47 /* Pods-TrickyNavigationBar_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -553,7 +498,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF3A7F4009694D202684ABCD /* Pods-TrickyNavigationBar_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

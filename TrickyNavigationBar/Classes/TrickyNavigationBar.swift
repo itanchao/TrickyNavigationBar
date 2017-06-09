@@ -33,16 +33,10 @@ public extension UINavigationBar{
     ///
     /// - parameter alpha: 透明度
     public func tc_setElementsAlpha(_ alpha:CGFloat) {
-//        self.alpha = alpha
-//        subviews.map { (subView)  in
-//            subView.alpha = alpha
-//        }
-        let leftViews = value(forKey: "_leftViews") as? [UIView] ?? []
-        for leftView in leftViews { leftView.alpha = alpha }
-        let rightViews = value(forKey: "_rightViews") as? [UIView] ?? []
-        for rightView in rightViews { rightView.alpha = alpha }
-        let titleView = value(forKey: "_titleView") as? UIView
-        titleView?.alpha = alpha
+        self.alpha = alpha
+        _ = subviews.map { (subView)  in
+            subView.alpha = alpha
+        }
     }
     /// 重置
    public func tc_reset() {
